@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthHub</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="hospital.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/f30fac2c61.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="logo">
+        <img src="healthhub-logo.png" alt="HealthHub" />
+      </div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#specialities">Specialities</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#appointment">Book Appointment</a></li>
+        <li><button class="logout-btn" id="logoutBtn">Logout</button></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+
+    <section id="home" class="hero">
+      <div class="hero-card">
+        <div class="hero-text">
+          <h1>Your Health, Our Priority</h1>
+          <p>
+            Book appointments with trusted doctors, explore specialities, and
+            receive quality healthcare from the comfort of your home.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#appointment" class="btn primary-btn">Book Appointment</a>
+            <a href="#specialities" class="btn outline-btn"
+              >Explore Specialities</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-illustration">
+          <img src="healthcare.svg" alt="Healthcare Illustration" />
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCTORS -->
+    <section id="doctors">
+      <h2>Our Doctors</h2>
+
+      <div class="doctors-grid">
+        <div class="doctor-card">
+          <div class="doctor-img">
+            <img src="doctor1.svg" alt="Doctor" />
+          </div>
+
+          <h3>Dr. Rahul Mehta</h3>
+          <p class="doctor-spec">Orthopedic Specialist</p>
+          <p class="doctor-exp">10+ Years Experience</p>
+
+          <a href="#appointment" class="doctor-btn">Book Appointment</a>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doctor-img">
+            <img src="doctor2.svg" alt="Doctor" />
+          </div>
+
+          <h3>Dr. Anjali Sharma</h3>
+          <p class="doctor-spec">Cardiologist</p>
+          <p class="doctor-exp">8+ Years Experience</p>
+
+          <a href="#appointment" class="doctor-btn">Book Appointment</a>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doctor-img">
+            <img src="doctor3.svg" alt="Doctor" />
+          </div>
+
+          <h3>Dr. Aman Verma</h3>
+          <p class="doctor-spec">Neurologist</p>
+          <p class="doctor-exp">12+ Years Experience</p>
+
+          <a href="#appointment" class="doctor-btn">Book Appointment</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIALITY -->
+    <section id="specialities">
+      <h2>Our Specialities</h2>
+
+      <div class="speciality-grid">
+        <div class="speciality-card">
+          <div class="illustration">
+            <img src="knee.svg" alt="Knee Surgery" />
+          </div>
+          <h3>Knee Surgery</h3>
+          <p>Advanced knee care with experienced orthopedic specialists.</p>
+        </div>
+
+        <div class="speciality-card">
+          <div class="illustration">
+            <img src="heart.svg" alt="Heart Care" />
+          </div>
+          <h3>Heart Care</h3>
+          <p>Comprehensive cardiac treatment with modern technology.</p>
+        </div>
+
+        <div class="speciality-card">
+          <div class="illustration">
+            <img src="spine.svg" alt="Spine Surgery" />
+          </div>
+          <h3>Spine Surgery</h3>
+          <p>Precision spine treatments for pain-free mobility.</p>
+        </div>
+      </div>
+    </section>
+    <!-- reviews -->
+    <section id="reviews">
+      <h2>What Our Patients Say</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-text">
+            <p>
+              "The doctors are amazing! My treatment was seamless and very
+              professional. Highly recommend HealthHub!"
+            </p>
+          </div>
+          <div class="reviewer-info">
+            <img
+              src="https://randomuser.me/api/portraits/women/68.jpg"
+              alt="Reviewer"
+            />
+            <h4>Nancy</h4>
+            <span>Patient</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-text">
+            <p>
+              "Excellent experience! The booking process is so easy, and the
+              staff is super friendly."
+            </p>
+          </div>
+          <div class="reviewer-info">
+            <img
+              src="https://randomuser.me/api/portraits/men/45.jpg"
+              alt="Reviewer"
+            />
+            <h4>Mayank</h4>
+            <span>Patient</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-text">
+            <p>
+              "HealthHub provides top-notch care. I felt heard and supported
+              throughout my treatment."
+            </p>
+          </div>
+          <div class="reviewer-info">
+            <img
+              src="https://randomuser.me/api/portraits/women/56.jpg"
+              alt="Reviewer"
+            />
+            <h4>Kanika</h4>
+            <span>Patient</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+
+      <div class="contact-form-container">
+        <form id="contactForm">
+          <input
+            type="text"
+            id="contactName"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            id="contactEmail"
+            placeholder="Your Email"
+            required
+          />
+          <input type="text" id="contactSubject" placeholder="Subject" />
+          <textarea
+            id="contactMessage"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- APPOINTMENT -->
+    <section id="appointment">
+      <h2>Book an Appointment</h2>
+
+      <div class="appointment-card">
+        <form id="appointmentForm">
+          <div class="form-row">
+            <input
+              type="text"
+              id="patientName"
+              placeholder="Patient Name"
+              required
+            />
+            <input
+              type="email"
+              id="patientEmail"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <input type="date" id="appointmentDate" required />
+            <input type="time" id="appointmentTime" required />
+          </div>
+
+          <select id="doctorName" required>
+            <option value="">Select Doctor</option>
+            <option>Dr. Rahul Mehta</option>
+            <option>Dr. Alexa</option>
+            <option>Dr. John</option>
+          </select>
+
+          <button type="submit" class="btn">Confirm Appointment</button>
+        </form>
+      </div>
+    </section>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
