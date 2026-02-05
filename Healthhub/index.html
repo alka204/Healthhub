@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HealthHub</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="index.css" />
@@ -36,6 +37,7 @@
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#appointment">Book Appointment</a></li>
+        <li><a href="doctor-login.html">Doctor Login</a></li>
         <li><button class="logout-btn" id="logoutBtn">Logout</button></li>
       </ul>
     </nav>
@@ -72,38 +74,38 @@
       <div class="doctors-grid">
         <div class="doctor-card">
           <div class="doctor-img">
-            <img src="doctor1.svg" alt="Doctor" />
+            <img src="assets/images/doctor1.svg" alt="Doctor" />
           </div>
 
           <h3>Dr. Rahul Mehta</h3>
           <p class="doctor-spec">Orthopedic Specialist</p>
           <p class="doctor-exp">10+ Years Experience</p>
 
-          <a href="#appointment" class="doctor-btn">Book Appointment</a>
+          <a href="profiles/rahul.html" class="doctor-btn">View Profile</a>
         </div>
 
         <div class="doctor-card">
           <div class="doctor-img">
-            <img src="doctor2.svg" alt="Doctor" />
+            <img src="assets/images/doctor2.svg" alt="Doctor" />
           </div>
 
           <h3>Dr. Anjali Sharma</h3>
           <p class="doctor-spec">Cardiologist</p>
           <p class="doctor-exp">8+ Years Experience</p>
 
-          <a href="#appointment" class="doctor-btn">Book Appointment</a>
+          <a href="profiles/anjali.html" class="doctor-btn">View Profile</a>
         </div>
 
         <div class="doctor-card">
           <div class="doctor-img">
-            <img src="doctor3.svg" alt="Doctor" />
+            <img src="assets/images/doctor3.svg" alt="Doctor" />
           </div>
 
           <h3>Dr. Aman Verma</h3>
           <p class="doctor-spec">Neurologist</p>
           <p class="doctor-exp">12+ Years Experience</p>
 
-          <a href="#appointment" class="doctor-btn">Book Appointment</a>
+          <a href="profiles/aman.html" class="doctor-btn">View Profile</a>
         </div>
       </div>
     </section>
@@ -253,12 +255,29 @@
           <select id="doctorName" required>
             <option value="">Select Doctor</option>
             <option>Dr. Rahul Mehta</option>
-            <option>Dr. Alexa</option>
-            <option>Dr. John</option>
+            <option>Dr. Anjali Sharma</option>
+            <option>Dr. Aman Verma</option>
           </select>
 
           <button type="submit" class="btn">Confirm Appointment</button>
         </form>
+      </div>
+    </section>
+
+    <section id="doctorProfileSection" class="doctor-profile hidden">
+      <div class="profile-card">
+        <span class="close-btn" id="closeProfileBtn" onclick="closeProfile()"
+          >×</span
+        >
+
+        <h2 id="profileName"></h2>
+        <p id="profileSpeciality"></p>
+        <p id="profileExperience"></p>
+        <p id="profileAvailability"></p>
+        <p id="profileTiming"></p>
+        <p id="profileRating"></p>
+
+        <button id="profileBookBtn">Book Appointment</button>
       </div>
     </section>
 

@@ -611,3 +611,124 @@ nav {
   width: auto;
   display: block;
 }
+.appointment-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.appointment-card button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.appointment-card .accepted {
+  color: green;
+  font-weight: bold;
+}
+.appointment-card .rejected {
+  color: red;
+  font-weight: bold;
+}
+.appointment-card .pending {
+  color: orange;
+  font-weight: bold;
+}
+
+/* =========================
+   DOCTOR DASHBOARD UI
+========================= */
+
+.dashboard {
+  padding: 120px 60px 60px; /* navbar fixed hai isliye top space */
+  background: #f4f7f7;
+  min-height: 100vh;
+}
+
+.dashboard h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #0b4d4d;
+  margin-bottom: 40px;
+}
+
+/* Container -> GRID for cards */
+.appointments-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+/* Appointment Card */
+.dashboard .appointment-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.dashboard .appointment-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Text spacing */
+.dashboard .appointment-card p {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Buttons */
+.dashboard .appointment-card button {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard .appointment-card button:first-of-type {
+  background: #0b4d4d;
+  color: #fff;
+}
+
+.dashboard .appointment-card button:last-of-type {
+  background: #e63946;
+  color: #fff;
+}
+
+/* Status colors */
+.dashboard .accepted {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.dashboard .rejected {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.dashboard .pending {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 110px 20px 40px;
+  }
+
+  .dashboard h1 {
+    font-size: 28px;
+  }
+}
